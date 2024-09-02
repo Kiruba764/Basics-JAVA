@@ -1,0 +1,21 @@
+import java.util.*;
+class Count{
+	static int i=0;
+	static int count(int[] arr,int target){
+		if(arr.length == i)
+			return 0;
+		int x=0;
+		if(arr[i++] == target)
+			 x=1;
+		return x + count(arr,target);
+	}
+	public static void main(String[] arg){
+		Scanner sc=new Scanner(System.in);
+		int l=sc.nextInt();
+		int[] arr=new int[l];
+		for(int i=0;i<l;i++)
+			arr[i]=obj.nextInt();
+		int target=obj.nextInt();
+		System.out.println(count(arr,target));
+	}
+}
