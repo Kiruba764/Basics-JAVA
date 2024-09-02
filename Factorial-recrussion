@@ -1,0 +1,16 @@
+import java.util.*;
+class Factorial{
+	static void fac(int num,int res){
+		if(num==0){
+			System.out.println(res);
+			return;
+		}
+		result*=num;
+		fac(num-1,res);
+	}
+	public static void main(String[] arg){
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		fac(num,1);
+	}
+}
