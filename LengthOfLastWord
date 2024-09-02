@@ -1,0 +1,13 @@
+import java.util.*;
+class Solution {
+    static Stack<String> stack=new Stack<>();
+    public int lengthOfLastWord(String s) {
+        String[] a=s.split(" ");
+        for(int i=0;i<a.length;i++){
+            stack.push(a[i]);
+        }
+        String ans=stack.pop();
+        int res=ans.length();
+        return res;
+    }
+}
