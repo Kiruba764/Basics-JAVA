@@ -1,0 +1,19 @@
+import java.util.*;
+class array_display{
+	static void disp(int[] ar,int i){
+		if(i==0){
+			System.out.println(ar[i]);
+			return;
+		}
+		disp(ar,i-1);
+		System.out.println(ar[i]);
+	}
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		int length=sc.nextInt();
+		int[] ar=new int[length];
+		for(int i=0;i<length;i++)
+			arr[i]=obj.nextInt();
+		disp(arr,size-1);
+	}
+}
